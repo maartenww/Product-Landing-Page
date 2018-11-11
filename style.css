@@ -1,5 +1,39 @@
 
 
-header {
-  background-color: grey;
+.container {
+  display: grid;
+  background-color: lightgray;
+  grid-template-rows: 75px 75px 600px 75px;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "n n n n n n"
+  "m h h h h h"
+  "m c c c c c"
+  "f f f f f f"
+}
+
+.navbar {
+  background-color: #357a1f;
+  grid-area: n
+}
+
+.header {
+  background-color: #b2d6a7;
+  grid-area: h;
+}
+
+.menu {
+  background-color: #dd6d54;
+  grid-area: m;
+}
+
+.content {
+  background-color: #e2d846;
+  grid-area: c;
+}
+
+.footer {
+  background-color: #091c38;
+  grid-area: f;
 }
